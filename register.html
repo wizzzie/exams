@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/register.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <title>Take a test | Sign up</title>
+</head>
+<body>
+    
+
+    <form action="index.html" class="login-form">
+        <img src="../assets\logo\logo.png" alt="logo">
+        <h1>Please sign up below </h1>
+
+        <div class=" tab">
+            <div class="txtb">
+                <input type="text" name="username" oninput="this.className=''" >
+                <span data-placeholder="Username"></span>
+            </div>
+            
+        <div class="txtb">
+                <input type="email" name="email" oninput="this.className=''" >
+                <span data-placeholder="Email"></span>
+        </div>
+
+        <div class="txtb">
+            <input type="password" name="password" oninput="this.className=''" >
+            <span data-placeholder="Password"></span>
+        </div>
+
+        </div>
+
+
+
+        <div class="tab">
+
+            <div class="txtb">
+                <input type="text" name="firstname" oninput="this.className=''" >
+                <span data-placeholder="Firstname"></span>
+            </div>
+
+
+            <div class="txtb">
+                <input type="text" name="lastname"  oninput="this.className=''" >
+                <span data-placeholder="Lastname"></span>
+            </div>
+
+
+            <div class="txtb">
+                <input type="tel" name="phone" oninput="this.className=''" >
+                <span data-placeholder="Phone"></span>
+           </div>
+
+        </div>
+
+        <div class="tab">
+
+            <div class="txtb">
+                <select name="course" id="">
+                    <option value="course">course</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Ethical Hacking">Ethical Hacking</option>
+                </select>
+            </div>
+
+
+            <div class="txtb">
+                <select name="level" id="" oninput="this.className=''">
+                    <option value="course">levels</option>
+                    <option value="100 Level">100 Level</option>
+                    <option value="200 Level">200 Level</option>
+                    <option value="300 Level">300 Level</option>
+                    <option value="400 Level">400 Level</option>
+                </select>
+            </div>
+            <div class="txtb">
+                <input type="text" name="birthday" oninput="this.className=''" >
+                <div class="killer">
+                    <span data-placeholder="dd"></span>
+                    <span data-placeholder="mm"></span>
+                    <span data-placeholder="yy"></span>
+                </div>
+            </div>
+        </div>        
+
+
+
+        <div style="overflow:hidden;">
+            <div style="display: flex;" class="btn">
+              <button type="button" class="logbtn" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+              <button type="button" class="logbtn" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+          </div>
+
+
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+        <!-- <input type="submit" value="Sign up" class="logbtn"> -->
+
+        <div class="bottom-text">
+            Already an Applicant <a href="../index.html"> Click here to Sign in</a>
+        </div>
+    </form>
+
+
+
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/form1.js"></script>
+    <script src="../scripts/form2.js"></script>
+</body>
+</html>
